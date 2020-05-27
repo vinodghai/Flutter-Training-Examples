@@ -6,7 +6,6 @@ import 'package:flutterapp/responsive.dart';
 import 'package:flutterapp/responsive_ui_helper.dart';
 import 'package:flutterapp/reusable.dart';
 import 'package:flutterapp/statelessparentexample.dart';
-import 'package:flutterapp/week_3_assignment.dart';
 import 'package:flutterapp/whatsapp.dart';
 
 import 'fittedboxexample.dart';
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(body: MediaQueryExample()),
+      home: SafeArea(child: Scaffold(body: MediaQueryExample())),
     );
   }
 }
